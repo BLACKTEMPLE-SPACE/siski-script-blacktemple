@@ -11,6 +11,6 @@
 Скачать и запустить:
 
 ```bash
-wget https://github.com/BLACKTEMPLE-SPACE/siski-script-blacktemple/siski-blacktemple.sh
+wget https://github.com/BLACKTEMPLE-SPACE/siski-script-blacktemple/blob/main/siski-blacktemple.sh
 chmod +x siski-blacktemple.sh
 ./siski-blacktemple.sh

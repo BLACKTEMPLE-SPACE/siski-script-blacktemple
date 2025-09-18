@@ -986,6 +986,13 @@ run_checks_and_print() {
 
 main() {
   set -euo pipefail
+
+  # принудительная установка jq если его нет
+  if ! command -v jq >/dev/null 2>&1; then
+    echo "[INFO] jq не найден, устанавливаю..."
+    sudo apt update && sudo apt install -y jq
+  fi
+
   install_dependencies
   parse_arguments "$@"
   run_checks_and_print
